@@ -21,18 +21,26 @@ struct AdvisorSummaryViewCell: View {
         VStack(alignment: .leading) {
             VStack(alignment: .leading,
                    spacing: 10) {
-                HStack(alignment: .top) {
+                
+                LabeledContent(content: {
+                    HStack {
+                        Text(advisorName)
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                }) {
                     Text("AdvisorName:")
                         .fontWeight(.bold)
-                    Text(advisorName)
-                    Spacer()
                 }
-                
-                HStack(alignment: .top) {
+                LabeledContent(content: {
+                    HStack {
+                        Text(assets)
+                            .foregroundColor(.black)
+                        Spacer()
+                    }
+                }) {
                     Text("Assets:")
                         .fontWeight(.bold)
-                    Text(assets)
-                    Spacer()
                 }
             }
             .frame(maxWidth: .infinity)

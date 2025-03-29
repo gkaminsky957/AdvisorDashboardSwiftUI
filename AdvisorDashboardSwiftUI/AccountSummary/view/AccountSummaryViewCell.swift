@@ -21,7 +21,8 @@ struct AccountSummaryViewCell: View {
     }
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading,
+               spacing: 10) {
             LabeledContent(content: {
                 HStack {
                     Text(name)
@@ -55,6 +56,7 @@ struct AccountSummaryViewCell: View {
                 Text("Custodian:")
                     .fontWeight(.bold)
             }
+            
             Divider()
                 .frame(height: 2)
                 .foregroundColor(.black)
