@@ -1,0 +1,48 @@
+{
+    "accounts": [
+        {
+            "name": "Bradley Green - 401k",
+            "number": "21889645",
+            "repId": "1",
+            "holdings": [
+                {
+                    "ticker": "HEMCX",
+                    "units": 77,
+                    "unitPrice": 398.63
+                },
+                {
+                    "ticker": "MOT",
+                    "units": 50,
+                    "unitPrice": 150.34
+                }
+            ],
+            "custodian": "Schwab"
+        },
+        {
+            "name": "Bradley Green - Roth",
+            "number": "14567890",
+            "repId": "1",
+            "holdings": [
+                {
+                    "ticker": "MIT",
+                    "units": 715,
+                    "unitPrice": 45.96
+                }
+            ],
+            "custodian": "Fidelity"
+        },
+        {
+            "name": "Bradley Green - Savings",
+            "number": "14567890",
+            "repId": "1",
+            "holdings": [
+                {
+                    "ticker": "GPA",
+                    "units": 210,
+                    "unitPrice": 99.23
+                }
+            ],
+            "custodian": "Ameriprice"
+        }
+    ]
+}

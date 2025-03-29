@@ -1,0 +1,35 @@
+{
+    "accounts": [
+        {
+            "name": "Talor Swift - 401k",
+            "number": "45678949",
+            "repId": "2",
+            "holdings": [
+                {
+                    "ticker": "TPS",
+                    "units": 85,
+                    "unitPrice": 32.78
+                },
+                {
+                    "ticker": "IOT",
+                    "units": 100,
+                    "unitPrice": 230.45
+                }
+            ],
+            "custodian": "JP Morgan"
+        },
+        {
+            "name": "Taylor Swift - Roth",
+            "number": "23567810",
+            "repId": "1",
+            "holdings": [
+                {
+                    "ticker": "PST",
+                    "units": 311,
+                    "unitPrice": 312.45
+                }
+            ],
+            "custodian": "Chase"
+        }
+    ]
+}

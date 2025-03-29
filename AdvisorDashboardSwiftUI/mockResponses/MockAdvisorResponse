@@ -1,0 +1,36 @@
+{
+   "advisors": [
+    {
+        "id": "1",
+        "name": "John Hanckock",
+        "custodians": [
+            {
+                "name": "Schwab",
+                "repId": "1"
+            },
+            {
+                "name": "Fidelity",
+                "repId": "1"
+            },
+            {
+                "name": "Ameriprice",
+                "repId": "1"
+            }
+        ]
+      },
+      {
+        "id": "2",
+        "name": "Alex Smith",
+        "custodians": [
+            {
+                "name": "JP Morgan",
+                "repId": "2"
+            },
+            {
+                "name": "Chase",
+                "repId": "2"
+            }
+        ]
+      }
+   ]
+}

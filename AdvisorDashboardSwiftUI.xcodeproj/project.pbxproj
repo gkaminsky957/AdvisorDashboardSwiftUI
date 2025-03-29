@@ -14,6 +14,19 @@
 		172A39EF2D94B84C000BD605 /* AdvisorDashboardSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A39EE2D94B84C000BD605 /* AdvisorDashboardSwiftUITests.swift */; };
 		172A39F92D94B84C000BD605 /* AdvisorDashboardSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A39F82D94B84C000BD605 /* AdvisorDashboardSwiftUIUITests.swift */; };
 		172A39FB2D94B84C000BD605 /* AdvisorDashboardSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A39FA2D94B84C000BD605 /* AdvisorDashboardSwiftUIUITestsLaunchTests.swift */; };
+		172A3A0C2D94B9CC000BD605 /* AdvisorSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A0B2D94B9CC000BD605 /* AdvisorSummaryView.swift */; };
+		172A3A0E2D94B9EB000BD605 /* AdvisorSummaryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A0D2D94B9EB000BD605 /* AdvisorSummaryViewCell.swift */; };
+		172A3A102D94BF2C000BD605 /* AdvisorSummaryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A0F2D94BF2C000BD605 /* AdvisorSummaryClient.swift */; };
+		172A3A162D94C00F000BD605 /* AdvisorSummraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A152D94C00F000BD605 /* AdvisorSummraryModel.swift */; };
+		172A3A182D94C04C000BD605 /* AdvisorSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A172D94C04C000BD605 /* AdvisorSummaryViewModel.swift */; };
+		172A3A1A2D94D30D000BD605 /* MockAdvisorResponse in Resources */ = {isa = PBXBuildFile; fileRef = 172A3A192D94D30D000BD605 /* MockAdvisorResponse */; };
+		172A3A202D9621CA000BD605 /* AccountSummaryClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A1F2D9621CA000BD605 /* AccountSummaryClient.swift */; };
+		172A3A222D96220F000BD605 /* AccountSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A212D96220F000BD605 /* AccountSummaryViewModel.swift */; };
+		172A3A242D962261000BD605 /* MockAccountSummaryResponseRepId1 in Resources */ = {isa = PBXBuildFile; fileRef = 172A3A232D962261000BD605 /* MockAccountSummaryResponseRepId1 */; };
+		172A3A262D962284000BD605 /* MockAccountSummaryResponseRepId2 in Resources */ = {isa = PBXBuildFile; fileRef = 172A3A252D962284000BD605 /* MockAccountSummaryResponseRepId2 */; };
+		172A3A292D96233F000BD605 /* AccountSummaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A282D96233F000BD605 /* AccountSummaryModel.swift */; };
+		172A3A2B2D96245D000BD605 /* AccountSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A2A2D96245D000BD605 /* AccountSummaryView.swift */; };
+		172A3A2D2D962484000BD605 /* AccountSummaryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A2C2D962484000BD605 /* AccountSummaryViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,19 @@
 		172A39F42D94B84C000BD605 /* AdvisorDashboardSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvisorDashboardSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		172A39F82D94B84C000BD605 /* AdvisorDashboardSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorDashboardSwiftUIUITests.swift; sourceTree = "<group>"; };
 		172A39FA2D94B84C000BD605 /* AdvisorDashboardSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorDashboardSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		172A3A0B2D94B9CC000BD605 /* AdvisorSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorSummaryView.swift; sourceTree = "<group>"; };
+		172A3A0D2D94B9EB000BD605 /* AdvisorSummaryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorSummaryViewCell.swift; sourceTree = "<group>"; };
+		172A3A0F2D94BF2C000BD605 /* AdvisorSummaryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorSummaryClient.swift; sourceTree = "<group>"; };
+		172A3A152D94C00F000BD605 /* AdvisorSummraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorSummraryModel.swift; sourceTree = "<group>"; };
+		172A3A172D94C04C000BD605 /* AdvisorSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorSummaryViewModel.swift; sourceTree = "<group>"; };
+		172A3A192D94D30D000BD605 /* MockAdvisorResponse */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockAdvisorResponse; sourceTree = "<group>"; };
+		172A3A1F2D9621CA000BD605 /* AccountSummaryClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryClient.swift; sourceTree = "<group>"; };
+		172A3A212D96220F000BD605 /* AccountSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewModel.swift; sourceTree = "<group>"; };
+		172A3A232D962261000BD605 /* MockAccountSummaryResponseRepId1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockAccountSummaryResponseRepId1; sourceTree = "<group>"; };
+		172A3A252D962284000BD605 /* MockAccountSummaryResponseRepId2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = MockAccountSummaryResponseRepId2; sourceTree = "<group>"; };
+		172A3A282D96233F000BD605 /* AccountSummaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryModel.swift; sourceTree = "<group>"; };
+		172A3A2A2D96245D000BD605 /* AccountSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryView.swift; sourceTree = "<group>"; };
+		172A3A2C2D962484000BD605 /* AccountSummaryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +120,9 @@
 		172A39DC2D94B844000BD605 /* AdvisorDashboardSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				172A3A1B2D94E3BB000BD605 /* AccountSummary */,
+				172A3A072D94B961000BD605 /* AdvisorSummary */,
+				172A3A112D94BF7B000BD605 /* mockResponses */,
 				172A39DD2D94B844000BD605 /* AdvisorDashboardSwiftUIApp.swift */,
 				172A39DF2D94B844000BD605 /* ContentView.swift */,
 				172A39E12D94B84B000BD605 /* Assets.xcassets */,
@@ -125,6 +154,104 @@
 				172A39FA2D94B84C000BD605 /* AdvisorDashboardSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = AdvisorDashboardSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		172A3A072D94B961000BD605 /* AdvisorSummary */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A142D94BFEE000BD605 /* model */,
+				172A3A092D94B999000BD605 /* view */,
+				172A3A082D94B986000BD605 /* viewModel */,
+				172A3A0A2D94B9A4000BD605 /* client */,
+			);
+			path = AdvisorSummary;
+			sourceTree = "<group>";
+		};
+		172A3A082D94B986000BD605 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A172D94C04C000BD605 /* AdvisorSummaryViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		172A3A092D94B999000BD605 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A0B2D94B9CC000BD605 /* AdvisorSummaryView.swift */,
+				172A3A0D2D94B9EB000BD605 /* AdvisorSummaryViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		172A3A0A2D94B9A4000BD605 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A0F2D94BF2C000BD605 /* AdvisorSummaryClient.swift */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		172A3A112D94BF7B000BD605 /* mockResponses */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A192D94D30D000BD605 /* MockAdvisorResponse */,
+				172A3A232D962261000BD605 /* MockAccountSummaryResponseRepId1 */,
+				172A3A252D962284000BD605 /* MockAccountSummaryResponseRepId2 */,
+			);
+			path = mockResponses;
+			sourceTree = "<group>";
+		};
+		172A3A142D94BFEE000BD605 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A152D94C00F000BD605 /* AdvisorSummraryModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		172A3A1B2D94E3BB000BD605 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A272D96232D000BD605 /* model */,
+				172A3A1E2D96219C000BD605 /* view */,
+				172A3A1D2D962192000BD605 /* viewModel */,
+				172A3A1C2D962175000BD605 /* client */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		172A3A1C2D962175000BD605 /* client */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A1F2D9621CA000BD605 /* AccountSummaryClient.swift */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		172A3A1D2D962192000BD605 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A212D96220F000BD605 /* AccountSummaryViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		172A3A1E2D96219C000BD605 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A2A2D96245D000BD605 /* AccountSummaryView.swift */,
+				172A3A2C2D962484000BD605 /* AccountSummaryViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		172A3A272D96232D000BD605 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A282D96233F000BD605 /* AccountSummaryModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +358,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172A3A1A2D94D30D000BD605 /* MockAdvisorResponse in Resources */,
 				172A39E52D94B84B000BD605 /* Preview Assets.xcassets in Resources */,
+				172A3A242D962261000BD605 /* MockAccountSummaryResponseRepId1 in Resources */,
 				172A39E22D94B84B000BD605 /* Assets.xcassets in Resources */,
+				172A3A262D962284000BD605 /* MockAccountSummaryResponseRepId2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +387,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172A3A0E2D94B9EB000BD605 /* AdvisorSummaryViewCell.swift in Sources */,
+				172A3A2D2D962484000BD605 /* AccountSummaryViewCell.swift in Sources */,
+				172A3A222D96220F000BD605 /* AccountSummaryViewModel.swift in Sources */,
 				172A39E02D94B844000BD605 /* ContentView.swift in Sources */,
+				172A3A102D94BF2C000BD605 /* AdvisorSummaryClient.swift in Sources */,
+				172A3A2B2D96245D000BD605 /* AccountSummaryView.swift in Sources */,
+				172A3A292D96233F000BD605 /* AccountSummaryModel.swift in Sources */,
+				172A3A0C2D94B9CC000BD605 /* AdvisorSummaryView.swift in Sources */,
+				172A3A182D94C04C000BD605 /* AdvisorSummaryViewModel.swift in Sources */,
+				172A3A162D94C00F000BD605 /* AdvisorSummraryModel.swift in Sources */,
 				172A39DE2D94B844000BD605 /* AdvisorDashboardSwiftUIApp.swift in Sources */,
+				172A3A202D9621CA000BD605 /* AccountSummaryClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
