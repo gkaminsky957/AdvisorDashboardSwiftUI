@@ -10,8 +10,11 @@ import SwiftUI
 struct AccountSummaryView: View {
     @StateObject private var viewModel = AccountSummaryViewModel()
     @State private var showPogressView: Bool = true
-    private var advisorId: String
+    @State private var selectedAccountSummary: AccountSummaryModel.AccountSummary?
+    @State private var shouldGoToHoldingView : Bool = false
     
+    private var advisorId: String
+
     init(advisorId: String) {
         self.advisorId =  advisorId
     }
@@ -41,7 +44,20 @@ private extension AccountSummaryView {
                                            number: summary.number,
                                            custodian: summary.custodian)
                     .padding(.horizontal, 10)
+                    .onTapGesture {
+                        shouldGoToHoldingView.toggle()
+                        selectedAccountSummary = summary
+                    }
                 }
+            }
+        }
+        .navigationDestination(isPresented: $shouldGoToHoldingView) {
+            if let selectedAccountSummary = selectedAccountSummary {
+                HoldingsView(holdings: selectedAccountSummary.holdings.map{ HoldingModel(name: $0.name,
+                                                                                         units: $0.units,
+                                                                                         price: $0.price)})
+            } else {
+                EmptyView()
             }
         }
     }
