@@ -16,29 +16,8 @@ enum FilterType: String {
 class AdvisorSummaryViewModel: ObservableObject {
     @Published var filteredAdvisorSummaries: [AdvisorSummraryWrapper.AdvisorSummraryModel] = []
     @Published var shouldShowFilterButton: Bool = false
-    @Published var byNameFilterSelected: Bool = false {
-        willSet {
-            if newValue {
-                byAssetFilterSelected = false
-                shouldShowSaveButton = currentUserFilterSelection == .byAssets ||
-                                      currentUserFilterSelection == .none
-            }
-            
-            shoulShhowRighButton = true
-        }
-    }
-    
-    @Published var byAssetFilterSelected: Bool = false {
-        willSet {
-            if newValue {
-                byNameFilterSelected = false
-                shouldShowSaveButton = currentUserFilterSelection == .byName || currentUserFilterSelection == .none
-            }
-            shoulShhowRighButton = true
-            
-        }
-    }
-    
+    @Published var byNameFilterSelected: Bool = false
+    @Published var byAssetFilterSelected: Bool = false
     @Published var shouldShowSaveButton: Bool = false
     @Published var shoulShhowRighButton: Bool = false
     
@@ -83,6 +62,41 @@ class AdvisorSummaryViewModel: ObservableObject {
             // shouldn't happen
             currentUserFilterSelection = .none
             filteredAdvisorSummaries = advisorSummaries
+        }
+    }
+    
+    func selectFiter(filterType: FilterType) {
+        shoulShhowRighButton = true
+        if filterType == .byName {
+            byAssetFilterSelected = false
+            if currentUserFilterSelection != .byName {
+                shouldShowSaveButton = true
+            } else {
+                shouldShowSaveButton = false
+            }
+        }
+        
+        if filterType == .byAssets {
+            byNameFilterSelected = false
+            if currentUserFilterSelection != .byAssets {
+                shouldShowSaveButton = true
+            } else {
+                shouldShowSaveButton = false
+            }
+        }
+    }
+    
+    func cancel() {
+        if currentUserFilterSelection == .byName && byNameFilterSelected == false {
+            byNameFilterSelected = true
+            byAssetFilterSelected = false
+        } else if currentUserFilterSelection == .byAssets && byAssetFilterSelected == false {
+            byAssetFilterSelected = true
+            byNameFilterSelected = false
+        } else if currentUserFilterSelection == .none {
+            byAssetFilterSelected = false
+            byNameFilterSelected = false
+            shoulShhowRighButton = false
         }
     }
 }

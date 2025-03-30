@@ -19,10 +19,14 @@ struct FilterView: View {
         NavigationStack {
             VStack {
                 FilterViewCell(title: "By Name",
-                               selected: $viewModel.byNameFilterSelected)
-                    .padding(.top, 10)
+                               selected: $viewModel.byNameFilterSelected) {
+                    viewModel.selectFiter(filterType: .byName)
+                }
+                .padding(.top, 10)
                 FilterViewCell(title: "By Asset",
-                               selected: $viewModel.byAssetFilterSelected)
+                               selected: $viewModel.byAssetFilterSelected) {
+                    viewModel.selectFiter(filterType: .byAssets)
+                }
                 Spacer()
             }
             .padding(.horizontal)
@@ -30,7 +34,7 @@ struct FilterView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 if viewModel.shoulShhowRighButton {
-                  ToolbarItem(placement: .navigationBarTrailing) {
+                    ToolbarItem(placement: .navigationBarTrailing) {
                         if viewModel.shouldShowSaveButton {
                             Button(action: {
                                 viewModel.setFilter()
@@ -47,13 +51,13 @@ struct FilterView: View {
                             }
                         }
                     }
-                    
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Button(action: {
-                            dismiss()
-                        }) {
-                            Text("Cancel")
-                        }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        viewModel.cancel()
+                        dismiss()
+                    }) {
+                        Text("Cancel")
                     }
                 }
             }

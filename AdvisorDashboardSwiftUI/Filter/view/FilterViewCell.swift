@@ -10,11 +10,14 @@ import SwiftUI
 struct FilterViewCell: View {
     private var title: String
     @Binding private var selected: Bool
+    private var callback: () -> ()
     
     init(title: String,
-         selected: Binding<Bool>) {
+         selected: Binding<Bool>,
+         callback: @escaping () -> () = {}) {
         self.title = title
         self._selected = selected
+        self.callback = callback
     }
     
     var body: some View {
@@ -30,6 +33,7 @@ struct FilterViewCell: View {
         .onTapGesture {
             if !selected {
                 selected.toggle()
+                callback()
             }
         }
     }
