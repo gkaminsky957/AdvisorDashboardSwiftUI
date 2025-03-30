@@ -30,6 +30,8 @@
 		172A3A322D9856FB000BD605 /* HoldingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A312D9856FB000BD605 /* HoldingsView.swift */; };
 		172A3A342D98570B000BD605 /* HoldingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A332D98570B000BD605 /* HoldingsViewCell.swift */; };
 		172A3A382D986BC8000BD605 /* HoldingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A372D986BC8000BD605 /* HoldingModel.swift */; };
+		172A3A3B2D987731000BD605 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A3A2D987731000BD605 /* FilterView.swift */; };
+		172A3A3E2D987A10000BD605 /* FilterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172A3A3D2D987A10000BD605 /* FilterViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		172A3A312D9856FB000BD605 /* HoldingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsView.swift; sourceTree = "<group>"; };
 		172A3A332D98570B000BD605 /* HoldingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingsViewCell.swift; sourceTree = "<group>"; };
 		172A3A372D986BC8000BD605 /* HoldingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldingModel.swift; sourceTree = "<group>"; };
+		172A3A3A2D987731000BD605 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		172A3A3D2D987A10000BD605 /* FilterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		172A39DC2D94B844000BD605 /* AdvisorDashboardSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				172A3A392D98770A000BD605 /* Filter */,
 				172A3A2E2D9856B1000BD605 /* Holdings */,
 				172A3A1B2D94E3BB000BD605 /* AccountSummary */,
 				172A3A072D94B961000BD605 /* AdvisorSummary */,
@@ -279,6 +284,23 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		172A3A392D98770A000BD605 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A3C2D9879FE000BD605 /* view */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		172A3A3C2D9879FE000BD605 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				172A3A3A2D987731000BD605 /* FilterView.swift */,
+				172A3A3D2D987A10000BD605 /* FilterViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -424,6 +446,8 @@
 				172A3A182D94C04C000BD605 /* AdvisorSummaryViewModel.swift in Sources */,
 				172A3A162D94C00F000BD605 /* AdvisorSummraryModel.swift in Sources */,
 				172A3A342D98570B000BD605 /* HoldingsViewCell.swift in Sources */,
+				172A3A3B2D987731000BD605 /* FilterView.swift in Sources */,
+				172A3A3E2D987A10000BD605 /* FilterViewCell.swift in Sources */,
 				172A3A322D9856FB000BD605 /* HoldingsView.swift in Sources */,
 				172A39DE2D94B844000BD605 /* AdvisorDashboardSwiftUIApp.swift in Sources */,
 				172A3A202D9621CA000BD605 /* AccountSummaryClient.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 struct AdvisorSummaryView: View {
     @StateObject private var viewModel: AdvisorSummaryViewModel = AdvisorSummaryViewModel()
     @State private var shouldGoToAccountView: Bool = false
+    @State private var shouldGoToFilterView: Bool = false
     @State private var selectedSummary: AdvisorSummraryWrapper.AdvisorSummraryModel?
     @State private var showPogressView: Bool = true
     
@@ -28,6 +29,17 @@ struct AdvisorSummaryView: View {
             }
             .navigationTitle("Advisor Summary")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                if viewModel.shouldShowFilterButton {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            shouldGoToFilterView.toggle()
+                        }) {
+                            Text("Filter")
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -53,6 +65,9 @@ private extension AdvisorSummaryView {
             } else {
                 EmptyView()
             }
+        }
+        .fullScreenCover(isPresented: $shouldGoToFilterView) {
+            FilterView(viewModel: viewModel)
         }
     }
 }

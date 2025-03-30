@@ -11,9 +11,6 @@ struct AdvisorSummraryWrapper: Decodable {
     var advisors: [AdvisorSummraryModel]
     
     struct AdvisorSummraryModel: Decodable {
-        static func == (lhs: AdvisorSummraryWrapper.AdvisorSummraryModel, rhs: AdvisorSummraryWrapper.AdvisorSummraryModel) -> Bool {
-            return true
-        }
         
         var name: String
         var id: String
