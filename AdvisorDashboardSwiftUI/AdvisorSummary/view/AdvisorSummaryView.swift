@@ -18,7 +18,7 @@ struct AdvisorSummaryView: View {
         NavigationStack {
             VStack {
                 if showPogressView {
-                    ProgressView("Laading Data. Please wait...")
+                    ActivityIndicatorView(title: "Laading advisors summary. Please wait...")
                 } else {
                     showListView()
                 }
@@ -58,6 +58,7 @@ private extension AdvisorSummaryView {
                     }
                 }
             }
+            .padding(.top, 10)
         }
         .navigationDestination(isPresented: $shouldGoToAccountView) {
             if let selectedSummary = selectedSummary {

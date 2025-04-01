@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct ActivityIndicatorView: View {
+    private var title: String
+    
+    init(title: String) {
+        self.title = title
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ProgressView("Loading accounts. Please wait...")
+                .foregroundColor(.black)
+        }
+        .padding(40)
+        .overlay {
+            RoundedRectangle(cornerRadius: 20)
+                .stroke(.black, lineWidth: 2)
+        }
     }
 }
 
 #Preview {
-    ActivityIndicatorView()
+    ActivityIndicatorView(title: "Loading accounts. Please wait...")
 }

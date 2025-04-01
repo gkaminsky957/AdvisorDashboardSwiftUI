@@ -22,14 +22,16 @@ struct AccountSummaryView: View {
     var body: some View {
         VStack {
             if showPogressView {
-                ProgressView("Loading accounts. Please wait...")
+                ActivityIndicatorView(title: "Loading accounts. Please wait...")
             } else {
                 showListView()
             }
         }
         .task {
-            await viewModel.fetchAccountSummary(advisorId: advisorId)
-            showPogressView.toggle()
+            if showPogressView {
+                await viewModel.fetchAccountSummary(advisorId: advisorId)
+                showPogressView.toggle()
+            }
         }
         .navigationTitle("Account Summary")
     }
@@ -37,7 +39,7 @@ struct AccountSummaryView: View {
 
 private extension AccountSummaryView {
     func showListView() -> some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             VStack(spacing: 20) {
                 ForEach(viewModel.summaries, id: \.id) { summary in
                     AccountSummaryViewCell(name: summary.name,
@@ -50,6 +52,7 @@ private extension AccountSummaryView {
                     }
                 }
             }
+            .padding(.top, 10)
         }
         .navigationDestination(isPresented: $shouldGoToHoldingView) {
             if let selectedAccountSummary = selectedAccountSummary {

@@ -24,6 +24,7 @@ struct HoldingsView: View {
                     .padding(.horizontal, 10)
                 }
             }
+            .padding(.top, 10)
         }
         .navigationTitle("Holdings SUmmary")
     }
