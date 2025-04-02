@@ -4,20 +4,25 @@
 //
 //  Created by Gennady Kaminsky on 3/27/25.
 //
+import Foundation
 
 struct AccountSummaryModel: Decodable {
     var accounts: [AccountSummary]
     
-    struct AccountSummary: Decodable {
+    struct AccountSummary: Decodable, Identifiable {
+        var id: String {
+            return UUID().uuidString
+        }
+        
         var name: String
         var number: String
-        var id: String
+        var accoontRepId: String
         var holdings: [Holding]
         var custodian: String
         
         enum CodingKeys: String, CodingKey {
             case name
-            case id = "repId"
+            case accoontRepId = "repId"
             case holdings
             case custodian
             case number

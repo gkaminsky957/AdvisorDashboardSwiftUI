@@ -58,9 +58,9 @@ struct AccountSummaryViewCell: View {
             }
             
             Divider()
-                .frame(height: 2)
-                .foregroundColor(.black)
-                .padding(.bottom, 10)
+                .frame(height: 1)
+                .background(Color.black)
+                .padding(.bottom, 5)
             
             Text("View Details")
                 .padding(.bottom, 10)
