@@ -32,6 +32,7 @@ struct AdvisorSummaryViewCell: View {
                     Text("AdvisorName:")
                         .fontWeight(.bold)
                 }
+                .padding(.top, 10)
                 LabeledContent(content: {
                     HStack {
                         Text(assets)
@@ -42,10 +43,13 @@ struct AdvisorSummaryViewCell: View {
                     Text("Assets:")
                         .fontWeight(.bold)
                 }
+                
+                MoreDetailsView(title: "View Details")
             }
             .frame(maxWidth: .infinity)
             .background(Color.white)
-            .padding()
+            .padding(.horizontal, 10)
+            .padding(.bottom, 5)
         }
        .background(Color.white)
        .cornerRadius(10)

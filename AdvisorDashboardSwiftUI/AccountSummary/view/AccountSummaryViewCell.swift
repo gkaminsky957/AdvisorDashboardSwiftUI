@@ -57,14 +57,7 @@ struct AccountSummaryViewCell: View {
                     .fontWeight(.bold)
             }
             
-            Divider()
-                .frame(height: 1)
-                .background(Color.black)
-                .padding(.bottom, 5)
-            
-            Text("View Details")
-                .padding(.bottom, 10)
-
+            MoreDetailsView(title: "View Details")
         }
         .padding(.horizontal, 10)
         .background(Color.white)
